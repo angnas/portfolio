@@ -1,0 +1,36 @@
+.parallax {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+
+    h1 {
+        font-size: 100px;
+
+    }
+    .mountain,
+    .planets,
+    .stars {
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .mountain {
+        z-index: 6;
+    }
+    .planets {
+        z-index: 3cd;
+    }
+    .stars {
+        z-index: 1;
+    }
+
+    
+    
+}
