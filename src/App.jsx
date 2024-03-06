@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 
 import './app.scss'
 import Navbar from './components/navbar/Navbar'
@@ -11,6 +11,8 @@ import Cursor from './components/cursor/Cursor'
 
 
 function App() {
+
+  const portfolioRef = useRef();
   
 
   return (
@@ -18,7 +20,7 @@ function App() {
     <Cursor />
     <section id='Homepage'>
       <Navbar />
-      <Hero />
+      <Hero portfolioRef={portfolioRef}/>
       <Sidebar />
     </section>
     <section id='Services'>
@@ -28,7 +30,7 @@ function App() {
     <section id='Portfolio'>
       <Parallax type="portfolio"/>
     </section>
-    <Portfolio />
+    <Portfolio ref={portfolioRef} />
     <section id='Contact'>
     <Contact />
     </section>

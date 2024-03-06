@@ -70,7 +70,11 @@ const sendEmail = (e) => {
             </motion.div>
             <motion.div className="item">
                 <h2>Resume</h2>
+                <a href="#">
                 <span>Resume</span>
+
+                </a>
+                
             </motion.div>
         </motion.div>
         <div className="formContainer">
@@ -81,7 +85,7 @@ const sendEmail = (e) => {
             transition={{duration:3, delay:1}}
             >
             
-<svg width="450px" height="450px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <motion.path
 strokeWidth={0.2}
 fill="none"

@@ -1,7 +1,9 @@
 import "./hero.scss"
 import {motion} from "framer-motion"
-import hero from '../hero.png';
-import scroll from '../scroll.png'
+import hero from '../../assets/images/hero.png';
+import scroll from "../../assets/images/scroll.png"
+import {Link} from "react-scroll";
+
 
 
 const textVariants = {
@@ -48,8 +50,9 @@ const sliderVariants = {
 
 
 
-function Hero() {
+function Hero({ portfolioRef }) {
 
+    console.log(portfolioRef.current);
     
   return (
     <div className="hero">
@@ -59,7 +62,10 @@ function Hero() {
             <motion.h2 variants={textVariants}>Angela Naseri</motion.h2>
             <motion.h1 variants={textVariants}>Frontend Developer</motion.h1>
             <motion.div className="buttons" variants={textVariants}>
-                <motion.button variants={textVariants}>See the Latest Projects</motion.button>
+                <motion.button variants={textVariants} 
+                onClick={() => portfolioRef.current.scrollIntoView({ behavior: "smooth" })}
+                
+                >See the Latest Projects</motion.button>
                 <motion.button variants={textVariants}>Contact Me</motion.button>
             </motion.div>
             <motion.img src={scroll} alt="" variants={textVariants} animate="scrollButton" />

@@ -1,8 +1,10 @@
 import React from 'react'
 import "./navbar.scss"
 import {motion} from "framer-motion"
-import github from '../github.png';
-import linkedin from '../linkedin.png';
+import github from "../../assets/images/github.png";
+import linkedin from "../../assets/images/linkedin.png";
+import cv from "../../assets/images/cv.png";
+
 
 function Navbar() {
   return (
@@ -18,11 +20,13 @@ function Navbar() {
                     duration: 0.5}}
             
             >
-                Angela Naseri
+                Welcome!
                 </motion.span>
             <div className="social">
-                <a href='#'><img src={linkedin} alt=''/></a>
-                <a href='#'><img src={github} alt=''/></a>
+                <a href='https://www.linkedin.com/in/angela-naseri/' target="_blank" rel="noopener noreferrer"><img src={linkedin} alt=''/></a>
+                <a href='https://github.com/angnas' target="_blank" rel="noopener noreferrer"><img src={github} alt=''/></a>
+                <a href='#' target="_blank" rel="noopener noreferrer"><img src={cv} alt=''/></a>
+
             </div>
         </div>
     </div>
