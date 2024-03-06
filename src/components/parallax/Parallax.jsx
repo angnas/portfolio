@@ -1,6 +1,9 @@
 import { useRef } from "react";
 import "./parallax.scss"
 import {motion, useScroll, useTransform} from "framer-motion"
+import planets from "../../assets/images/planets.png"
+import sun from "../../assets/images/sun.png"
+import stars from "../../assets/images/stars.png"
 
 
 
@@ -34,15 +37,32 @@ function Parallax({ type }) {
           {type=== "services" ? "Who I Am?" : "What I did?"}
         </motion.h1>
         <motion.div className="mountains"></motion.div>
+
+
         {/* <motion.div className="planets"
         style={{ y: yBg, backgroundImage: `url(${ type === "services" ? "planets.png" : "sun.png" })`,
       }}
         ></motion.div> */}
-        <motion.div  style={{ y: yBg}} className="planets" type="services"></motion.div>
+
+
+
+       <motion.div className="planets"
+        style={{ y: yBg, backgroundImage: `url(${type === "services" ? planets : sun})`,
+      }}
+        ></motion.div>
+
+        <motion.img src={stars}  style={{ x: yBg}} className="stars"  />
+
+{/* <motion.div  style={{ x: yBg}} className="stars"><img src={stars} /></motion.div> */}
+
+
+
+
+        {/* <motion.div  style={{ y: yBg}} className="planets" type="services"></motion.div>
         <motion.div  style={{ y: yBg}} className="sun"
         type= "portfolio"
-        ></motion.div>
-        <motion.div  style={{ x: yBg}} className="stars"></motion.div>
+        ></motion.div> */}
+        
     </div>
   );
 };
