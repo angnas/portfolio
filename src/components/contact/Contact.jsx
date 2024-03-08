@@ -66,7 +66,7 @@ const sendEmail = (e) => {
             </motion.div>
             <motion.div className="item">
                 <h2>Address</h2>
-                <span>Stockholm,kista</span>
+                <span>Stockholm,Sweden</span>
             </motion.div>
             <motion.div className="item">
                 <h2>Resume</h2>

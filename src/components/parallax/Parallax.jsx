@@ -34,7 +34,7 @@ function Parallax({ type }) {
     
     >
         <motion.h1 style={{ y: yText}}>
-          {type=== "services" ? "Who I Am?" : "What I did?"}
+          {type=== "about" ? "Who I Am?" : "What I did?"}
         </motion.h1>
         <motion.div className="mountains"></motion.div>
 
@@ -47,7 +47,7 @@ function Parallax({ type }) {
 
 
        <motion.div className="planets"
-        style={{ y: yBg, backgroundImage: `url(${type === "services" ? planets : sun})`,
+        style={{ y: yBg, backgroundImage: `url(${type === "about" ? planets : sun})`,
       }}
         ></motion.div>
 

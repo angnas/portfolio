@@ -8,37 +8,40 @@ import Parallax from './components/parallax/Parallax'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Cursor from './components/cursor/Cursor'
+import { BrowserRouter } from "react-router-dom";
+import About from './components/about/About'
+
+
 
 
 function App() {
 
-  const portfolioRef = useRef();
   
 
   return (
     <>
+
+    <BrowserRouter>
+
     <Cursor />
     <section id='Homepage'>
       <Navbar />
-      <Hero portfolioRef={portfolioRef}/>
+      <Hero />
       <Sidebar />
     </section>
-    <section id='Services'>
-      <Parallax type="services"/>
+    <section id='About'>
+      <Parallax type="about"/>
     </section>
-    <section>Services</section>
+    <About />
     <section id='Portfolio'>
       <Parallax type="portfolio"/>
     </section>
-    <Portfolio ref={portfolioRef} />
+    <Portfolio />
     <section id='Contact'>
     <Contact />
     </section>
-    
-    
-      
-        
-      
+
+    </BrowserRouter>
       
     </>
   )
