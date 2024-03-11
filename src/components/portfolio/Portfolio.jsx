@@ -21,13 +21,13 @@ const items = [
     desc: "Hungry Chef is a delightful culinary platform where food lovers can discover, enjoy and get recipes from around the globe. Whether you're a seasoned chef or a kitchen newbie, Hungry Chef offers an array of recipes to satisfy your culinary cravings.",
     url: "https://hungry-chef.netlify.app/",
 } ,
-{
-    id: 3,
-    title: "Color Me Twice",
-    img: "color-me-twice.png",
-    desc: "Color me twice has been designed to assist you in creating an 2 color palette for your upcoming web development project. By selecting two colors, Color Me Twice will provide you based on your choice of colors, a primary color and its accompanying accent shade, resulting in a visually cohesive two-color composition.",
-    url: "https://color-me-twice.netlify.app",
-} ,
+// {
+//     id: 3,
+//     title: "Color Me Twice",
+//     img: "color-me-twice.png",
+//     desc: "Color me twice has been designed to assist you in creating an 2 color palette for your upcoming web development project. By selecting two colors, Color Me Twice will provide you based on your choice of colors, a primary color and its accompanying accent shade, resulting in a visually cohesive two-color composition.",
+//     url: "https://color-me-twice.netlify.app",
+// } ,
 {
     id: 4,
     title: "Fashion Website",
@@ -64,7 +64,9 @@ const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
         <h2>{item.title}</h2>
         <p>{item.desc}</p>
         <a href={item.url} target="_blank" rel="noopener noreferrer">
-              <button>See Demo</button>
+              <motion.button
+              whileHover={{scale: 1.1}}
+              >See Demo</motion.button>
             </a>
 
 

@@ -14,6 +14,11 @@
         padding: 10px;
         flex-direction: column;
     }
+    @include tablet {
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+    }
 
 
 
@@ -29,6 +34,12 @@
             align-items: center;
             margin-top: 70px;
         }
+        @include tablet {
+            gap: 30px;
+            text-align: center;
+            align-items: center;
+            margin-top: 80px;
+        }
 
 
         h1 {
@@ -36,12 +47,32 @@
             line-height: 88px;
 
             @include mobile {
-                font-size: 36px;
+                font-size: 32px;
+                line-height: 60px;
             }
+            @include tablet {
+                font-size: 80px;
+            }
+        }
+
+        h2 {
+
+            @include mobile {
+                font-size: 24px;
+                
+            }
+
         }
 
         span {
             font-weight: 300;
+
+            @include mobile {
+                font-weight: 200;
+            }
+            @include tablet {
+                font-weight: 300;
+            }
         }
     }
 
@@ -55,6 +86,10 @@
 
 
         }
+        @include tablet {
+            width: 100%;
+            padding: 50px;
+        }
 
 
         .phoneSvg {
@@ -65,6 +100,7 @@
             align-items: center;
             margin: auto;
             z-index: -1;
+            
 
             svg {
                 width: 400px;
@@ -76,6 +112,11 @@
                     height: 300px;
                     
                     
+                }
+                @include tablet {
+                    width: 350px;
+                    height: 350px;
+                   
                 }
 
             }

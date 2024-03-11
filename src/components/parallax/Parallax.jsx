@@ -39,29 +39,12 @@ function Parallax({ type }) {
         <motion.div className="mountains"></motion.div>
 
 
-        {/* <motion.div className="planets"
-        style={{ y: yBg, backgroundImage: `url(${ type === "services" ? "planets.png" : "sun.png" })`,
-      }}
-        ></motion.div> */}
-
-
-
        <motion.div className="planets"
         style={{ y: yBg, backgroundImage: `url(${type === "about" ? planets : sun})`,
       }}
         ></motion.div>
 
         <motion.img src={stars}  style={{ x: yBg}} className="stars"  />
-
-{/* <motion.div  style={{ x: yBg}} className="stars"><img src={stars} /></motion.div> */}
-
-
-
-
-        {/* <motion.div  style={{ y: yBg}} className="planets" type="services"></motion.div>
-        <motion.div  style={{ y: yBg}} className="sun"
-        type= "portfolio"
-        ></motion.div> */}
         
     </div>
   );
