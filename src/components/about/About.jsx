@@ -47,7 +47,7 @@ function About() {
 
   return (
     <section
-    
+    ref={containerRef}
     >
         <div className="about"
         >
