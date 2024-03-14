@@ -70,7 +70,7 @@ const sendEmail = (e) => {
             </motion.div>
             <motion.div className="item">
                 <h2>Resume</h2>
-                <a href="https://docs.google.com/document/d/1JqYz2ek4lNogIi16lngB3ivWysQr6UAAd7HaQwJ8I7Q/edit" download target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1_uT1O4LkqKMGdqgg9gwRbZV1ZWRzLsa4/view" download target="_blank" rel="noopener noreferrer">
                 <span>Resume</span>
 
                 </a>
