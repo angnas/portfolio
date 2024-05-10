@@ -1,7 +1,7 @@
 
 # Portfolio
 
-Welcome to my Portfolio 
+Welcome to my Portfolio ,
 I Designed a dynamic personal website featuring animated presentations of projects, CV details, LinkedIn, GitHub links, and contact information, creating an immersive user experience, .
 
 
